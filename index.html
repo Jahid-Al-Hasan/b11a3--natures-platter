@@ -35,6 +35,9 @@
               "primary-text": "#179800",
               "text-black": "#111111",
             },
+            backgroundImage: {
+              "card-bg-img": "url('./assets/vegetable-offer.png')",
+            },
           },
         },
       };
@@ -123,7 +126,7 @@
     <main>
       <!-- section-1: services -->
       <div
-        class="container mx-auto my-12 lg:my-36 px-4 lg:px-0 flex-col lg:flex"
+        class="container mx-auto my-12 lg:my-36 px-4 lg:px-0 flex flex-col lg:flex"
       >
         <h3 class="text-primary-text font-semibold text-[24px]">Services</h3>
         <div class="mt-8 lg:mt-11 grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -182,10 +185,233 @@
       </div>
       <!-- section-2: products -->
       <div class="bg-primary-bg">
-        <div class="container mx-auto">
-          <h2 class="text-primary-text font-semibold text-[24px]">
+        <div class="container mx-auto py-12 lg:py-36 px-4 lg:px-0">
+          <h2
+            class="text-primary-text font-semibold text-[24px] lg:text-[36px]"
+          >
             Popular Products
           </h2>
+
+          <div class="pt-8 lg:pt-12 flex flex-col lg:flex-row gap-6">
+            <!-- main card -->
+            <div
+              class="rounded-[10px] bg-gradient-to-br from-[#53DB3A] to-white p-8 flex flex-col items-start gap-4 lg:gap-8"
+            >
+              <h3 class="text-white font-semibold text-[24px] lg:text-[36px]">
+                30% Off
+              </h3>
+              <p class="text-white">
+                Discover a world of treats, toys, and essentials handpicked for
+              </p>
+              <button
+                class="btn px-7 py-2 font-normal text-lg rounded-lg bg-white"
+              >
+                Buy Now
+              </button>
+            </div>
+            <!-- other cards -->
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+              <!-- item-1 onion -->
+              <div
+                class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/onion.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Onion 1 KG
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+              <!-- item-2 tomato -->
+              <div
+                class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/onion.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Tomato 500 g
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+              <!-- item-3 potato -->
+              <div
+                class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/potato.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Potato 1 KG
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+              <!-- item-4 onion -->
+              <div
+                class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/onion.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Onion 1 KG
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+              <!-- item-5 tomato -->
+              <div
+                class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/onion.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Tomato 500 g
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+
+              <!-- item-6 tomato -->
+              <div
+                class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/onion.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Tomato 500 g
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+              <!-- item-7 onion -->
+              <div
+                class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/onion.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Onion 1 KG
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+              <!-- item-8 potato -->
+              <div
+                class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/potato.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Potato 1 KG
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+              <!-- item-9 potato -->
+              <div
+                class="hidden lg:flex rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
+              >
+                <img
+                  class="bg-primary-bg p-2 lg:p-4 rounded-[10px]"
+                  src="./assets/potato.png"
+                  alt=""
+                />
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <div class="flex gap-1 lg:gap-2">
+                    <img src="./assets/Vector.png" alt="" />
+                    <span class="text-[10px] lg:text-[16px] font-normal"
+                      >4.5</span
+                    >
+                  </div>
+                  <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                    Potato 1 KG
+                  </h4>
+                  <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
