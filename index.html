@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/99ab2aad64.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisy UI cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -26,6 +31,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-bg": "#EFEBE3",
+              "primary-text": "#179800",
+              "text-black": "#111111",
             },
           },
         },
@@ -38,13 +46,24 @@
       }
     </style>
   </head>
-  <body class="sora-font">
+  <body class="sora-font text-text-black">
     <!-- header -->
-    <header class="container mx-auto pt-6">
+    <header class="bg-gradient-to-b from-white to-primary-bg lg:pt-6">
       <!-- navbar -->
-      <div class="navbar bg-base-100">
+      <div
+        class="navbar container mx-auto border-solid border-green-500 border-[.5px] lg:border-none"
+      >
         <div class="navbar-start">
-          <img src="./assets/logo-header.png" alt="natures platter logo" />
+          <img
+            class="hidden lg:flex"
+            src="./assets/logo-header.png"
+            alt="natures platter logo"
+          />
+          <img
+            class="lg:hidden"
+            src="./assets/Group.png"
+            alt="natures platter logo"
+          />
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -53,44 +72,52 @@
             <li><a>Contact us</a></li>
           </ul>
         </div>
-        <div class="navbar-end gap-3">
+        <div class="navbar-end lg:gap-7">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+              <img src="./assets/Vector (Stroke).png" alt="menu logo" />
             </div>
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
             >
-              <li><a>Item 1</a></li>
-              <li><a>Item 3</a></li>
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
             </ul>
           </div>
-          <a
-            class="btn px-7 py-2 font-normal text-lg rounded-lg bg-white hidden lg:flex"
-            >Login</a
-          >
-          <a
-            class="btn px-7 py-2 font-normal text-lg text-white rounded-lg border-none bg-[#31b331] hidden lg:flex"
-            >Register</a
-          >
+          <i class="fa-solid fa-lg fa-magnifying-glass hidden lg:flex"></i>
+          <i class="fa-solid fa-lg fa-cart-shopping hidden lg:flex"></i>
+          <div class="flex gap-3">
+            <a
+              class="btn px-7 py-2 font-normal text-lg rounded-lg bg-white hidden lg:flex"
+              >Login</a
+            >
+            <a
+              class="btn px-7 py-2 font-normal text-lg text-white rounded-lg border-none bg-[#31b331] hidden lg:flex"
+              >Register</a
+            >
+          </div>
         </div>
       </div>
       <!-- banner -->
-      <div></div>
+      <div
+        class="container mx-auto grid place-items-center gap-4 lg:gap-8 mt-24"
+      >
+        <div class="text-center px-7 text-[#111111] space-y-4 lg:space-y-8">
+          <h1 class="text-[32px] lg:text-[56px] font-semibold">
+            Freshness <span class="text-[#179800]">You Can<br />Count</span> On,
+            Prices You’ll Love!
+          </h1>
+          <p
+            class="text-[16px] font-light opacity-80 lg:text-[20px] lg:font-normal"
+          >
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <img src="./assets/hero-vegetables.png" alt="" />
+      </div>
     </header>
     <!-- main -->
     <main></main>
