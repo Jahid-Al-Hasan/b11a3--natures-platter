@@ -49,7 +49,7 @@
       }
     </style>
   </head>
-  <body class="sora-font text-text-black">
+  <body class="sora-font text-text-black relative">
     <!-- header -->
     <header class="bg-gradient-to-b from-white to-primary-bg lg:pt-6">
       <!-- navbar -->
@@ -145,8 +145,8 @@
               24/7 Services
             </h3>
             <p class="text-[16px] font-light opacity-70 text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              Our dedicated support team is available around the clock to assist
+              you with any inquiries or issues.
             </p>
           </div>
           <!-- card-2 -->
@@ -162,8 +162,8 @@
               Fast Delivery
             </h3>
             <p class="text-[16px] font-light opacity-70 text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              We ensure quick and hassle-free delivery, bringing fresh groceries
+              to your doorstep in no time.
             </p>
           </div>
           <!-- card-3 -->
@@ -179,8 +179,8 @@
               Healthy Products
             </h3>
             <p class="text-[16px] font-light opacity-70 text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              We offer high-quality, organic, and fresh groceries to support a
+              healthy lifestyle for you and your family.
             </p>
           </div>
         </div>
@@ -197,22 +197,27 @@
           <div class="pt-8 lg:pt-12 flex flex-col lg:flex-row gap-6">
             <!-- main card -->
             <div
-              class="rounded-[10px] bg-gradient-to-br from-[#53DB3A] to-white p-8 flex flex-col items-start gap-4 lg:gap-8"
+              class="lg:max-w-[30%] rounded-[10px] bg-gradient-to-br from-[#53DB3A] to-white p-8"
             >
-              <h3 class="text-white font-semibold text-[24px] lg:text-[36px]">
-                30% Off
-              </h3>
-              <p class="text-white">
-                Discover a world of treats, toys, and essentials handpicked for
-              </p>
-              <button
-                class="btn px-7 py-2 font-normal text-lg rounded-lg bg-white"
-              >
-                Buy Now
-              </button>
+              <div class="flex flex-col items-start gap-4 lg:gap-8">
+                <h3 class="text-white font-semibold text-[24px] lg:text-[36px]">
+                  30% Off
+                </h3>
+                <p class="text-white">
+                  Discover a world of treats, toys, and essentials handpicked
+                  for
+                </p>
+                <button
+                  class="btn px-7 py-2 font-normal text-lg rounded-lg bg-white"
+                >
+                  Buy Now
+                </button>
+              </div>
             </div>
             <!-- other cards -->
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+            <div
+              class="lg:w-[70%] grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4"
+            >
               <!-- item-1 onion -->
               <div
                 class="rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center"
@@ -418,7 +423,7 @@
       </div>
       <!-- section-3: offer -->
       <div
-        class="container mx-auto my-12 lg:my-36 px-4 lg:px-0 flex flex-col lg:flex"
+        class="container mx-auto mt-12 lg:mt-36 mb-[285px] lg:mb-[390px] px-4 lg:px-0 flex flex-col lg:flex"
       >
         <h2 class="text-primary-text font-semibold text-[24px] lg:text-[36px]">
           Arrival & Offers
@@ -470,11 +475,48 @@
         </div>
       </div>
     </main>
+
     <!-- footer -->
-    <footer class="bg-primary-text">
+    <footer class="relative bg-primary-text">
+      <!-- grocery-news -->
+      <div
+        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 container mx-auto px-4 lg:px-0"
+      >
+        <div
+          class="w-full bg-primary-bg rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-12 py-9 lg:py-14 justify-evenly items-center"
+        >
+          <div class="place-self-center w-64 h-44 lg:w-auto lg:h-auto">
+            <img src="./assets/vegetable-busket.png" alt="" />
+          </div>
+          <div
+            class="flex flex-col items-center lg:items-start lg:text-left px-10 lg:px-0"
+          >
+            <h3
+              class="text-xl lg:text-4xl font-semibold text-primary-text lg:text-text-black"
+            >
+              Get Grocery News
+            </h3>
+            <p class="text-base lg:text-xl mt-3 mb-5 lg:mt-6 lg:mb-9">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+
+            <input
+              class="bg-white rounded-md p-3 lg:p-4 mb-3 lg:mb-5 w-full lg:w-[80%]"
+              type="text"
+              name="email"
+              placeholder="Enter email..."
+            />
+            <button
+              class="px-7 py-2 font-normal text-lg text-white rounded-lg border-none bg-[#31b331]"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
       <!-- footer container -->
       <div
-        class="container mx-auto grid gap-9 lg:gap-36 justify-between items-end px-4 lg:px-0 pt-[370px] pb-10 lg:pb-[140px] lg:grid-cols-3"
+        class="container mx-auto grid gap-9 lg:gap-36 justify-between items-end px-4 lg:px-0 pt-[280px] lg:pt-[370px] pb-10 lg:pb-[140px] lg:grid-cols-3"
       >
         <nav class="">
           <img src="./assets/logo-footer.png" alt="" />
